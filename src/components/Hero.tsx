@@ -42,7 +42,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-[0.95fr_1.35fr] gap-12 md:gap-16 items-center">
           <div>
             <p className="text-xs tracking-[0.14em] uppercase text-[var(--color-red)] mb-4">
-              Boyle Heights &middot; Valley Glen &middot; Los Angeles
+              Boyle Heights &middot; Los Angeles
             </p>
             <h1 className="font-display font-medium text-[var(--color-text)] text-4xl sm:text-5xl leading-[1.08]">
               Some pain you learn to live with. You shouldn't have to.

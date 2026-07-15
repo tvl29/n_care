@@ -1,8 +1,7 @@
 export const contact = {
-  email: "tomas@ncarept.com",
-  yahooEmail: "ncarept@yahoo.com",
-  phone: "310-980-0904",
-  phoneHref: "+13109800904",
+  email: "ncarephysicaltherapy@gmail.com",
+  phone: "+1 323-261-6100",
+  phoneHref: "+13232616100",
   facebook:
     "https://www.facebook.com/profile.php?id=100061365979497&sk=reviews",
 };
@@ -72,46 +71,50 @@ export const founder = {
   ],
 };
 
+// Prefix for anything in /public so paths resolve correctly under Vite's
+// `base` config (e.g. GitHub Pages subpath deployments like /n_care/).
+const BASE = import.meta.env.BASE_URL;
+
 export const team = [
   {
     name: "Mary Romero",
     role: "Physical Therapist",
-    photo: "team/mary-romero.jpg",
+    photo: `${BASE}team/mary-romero.png`,
     facePosition: "62% 24%",
     bio: "Works one-on-one with post-surgical and chronic pain patients, focused on steady, measurable progress every session.",
   },
   {
     name: "Eric Mendoza",
     role: "Physical Therapist Assistant",
-    photo: "team/eric-mendoza.jpg",
+    photo: `${BASE}team/eric-mendoza.png`,
     facePosition: "60% 27%",
     bio: "Supports treatment plans day to day, making sure every exercise is done right and every patient feels heard.",
   },
   {
     name: "Luis Magrini",
     role: "Physical Therapy Aide",
-    photo: "team/luis-magrini.jpg",
+    photo: `${BASE}team/luis-magrini.png`,
     facePosition: "62% 28%",
     bio: "The steady hand behind the scenes, keeping sessions on time and patients set up for their best recovery.",
   },
   {
     name: "Amanda Ayub",
     role: "Massage Therapist",
-    photo: "team/amanda-ayub.jpg",
+    photo: `${BASE}team/amanda-ayub.png`,
     facePosition: "58% 39%",
     bio: "Specializes in hands-on soft tissue work that eases tension and speeds up recovery between sessions.",
   },
   {
     name: "Christian Trigueros",
     role: "Massage Therapist",
-    photo: "team/christian-trigueros.jpg",
+    photo: `${BASE}team/christian-trigueros.png`,
     facePosition: "62% 34%",
     bio: "Known for working through stubborn muscle groups, from frozen shoulders to old sports injuries.",
   },
   {
     name: "Juan Reyes",
     role: "Front Office",
-    photo: "team/juan-reyes.jpg",
+    photo: `${BASE}team/juan-reyes.png`,
     facePosition: "64% 32%",
     bio: "Usually the first friendly face you meet, handling scheduling and questions so your visit starts smoothly.",
   },
@@ -120,7 +123,7 @@ export const team = [
 export const locations = [
   {
     name: "Boyle Heights",
-    address: "326 N Soto St, Los Angeles, CA 90033",
+    address: "326 N Soto St, Los Angeles, CA 90033, United States",
     phone: "(323) 261-6100",
     phoneHref: "+13232616100",
     hours: [
@@ -131,20 +134,6 @@ export const locations = [
     rating: "4.9",
     reviewCount: "46",
     lead: "Dr. Tomas Abraham",
-  },
-  {
-    name: "Valley Glen",
-    address: "6020 Woodman Ave, Valley Glen, CA 91401",
-    phone: "(818) 849-6613",
-    phoneHref: "+18188496613",
-    hours: [
-      "Mon – Thu: 7:00 AM – 5:00 PM",
-      "Fri: 7:00 AM – 12:00 PM",
-      "Sat – Sun: Closed",
-    ],
-    rating: "4.5",
-    reviewCount: "18",
-    lead: "Abraham & Chris",
   },
 ];
 
@@ -165,7 +154,7 @@ export const reviews = [
     quote:
       "I had close to 20 PT sessions here and each session was worth it. Chris helped me heal my frozen shoulder. He knows how to work through different muscle groups.",
     author: "Google review",
-    location: "Valley Glen",
+    location: "Boyle Heights",
   },
   {
     quote:

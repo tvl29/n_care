@@ -66,7 +66,7 @@ export default function Nav() {
                 : `${import.meta.env.BASE_URL}logo_dark.png`
             }
             alt="N-Care Physical Therapy, Inc."
-            className="h-12 md:h-14 w-auto"
+            className="h-14 md:h-14 w-auto"
           />
         </a>
 
