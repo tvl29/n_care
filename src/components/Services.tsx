@@ -33,7 +33,7 @@ export default function Services() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-px bg-[var(--color-border)] border border-[var(--color-border)]">
           {services.map((s, i) => (
-            <Reveal key={s.title} delay={i * 70}>
+            <Reveal key={s.title} delay={i * 70} className="h-full">
               <ServiceCard service={s} index={i} />
             </Reveal>
           ))}
@@ -69,7 +69,7 @@ function ServiceCard({ service: s, index }: { service: Service; index: number })
       id={s.id}
       ref={cardRef}
       onMouseMove={handleMove}
-      className="relative bg-[var(--color-ink)] p-8 md:p-10 group transition-colors scroll-mt-24 overflow-hidden"
+      className="relative h-full bg-[var(--color-ink)] p-8 md:p-10 group transition-colors scroll-mt-24 overflow-hidden"
     >
       {/* Cursor-follow spotlight, visible on hover only (desktop) */}
       <div
